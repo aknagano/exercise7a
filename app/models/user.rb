@@ -55,8 +55,4 @@ class User < ApplicationRecord
       User.where('name LIKE ?', '%' + content + '%')
     end
   end
-  
-  def following?(user)
-    followings.include?(user)
-  end
 end
